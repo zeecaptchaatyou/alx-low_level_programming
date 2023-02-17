@@ -1,9 +1,10 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * Definition: main - It prints out a string to standard output
- * Return: 0 if success 
- */
+* Deinition: main - Program start
+*
+* Return: 0 if program compiles successfully
+*/
 
 int main(void)
 {
