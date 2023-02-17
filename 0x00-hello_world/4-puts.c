@@ -1,10 +1,13 @@
 #include <stdio.h>
 /**
- * main is the the body
+ * Description: main - Its prints out a string to standard output
+ * Return: if success
  */
 int main(void)
+
 {
-char ALX[] = "\"Programming is like building a multilingual puzzle\n\"";
-puts(ALX);
-return (0);
+	puts("\"Programming is like building a multilingual puzzle\n");
+	
+
+	return (0);
 }
