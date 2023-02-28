@@ -5,10 +5,7 @@
  * Main : Takes control at the beginning of code compilation and execution
  */
 
-void reset_to_93(int *p) {
-       	 int n = 402;
+void reset_to_93(int *n) {
 
-             p = &n;
-
-	    *p = 402;
+	    *n = 402;
 }
