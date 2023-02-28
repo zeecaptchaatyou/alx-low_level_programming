@@ -6,9 +6,9 @@
  */
 
 void reset_to_93(int *p) {
-	int n = 402;
+       	 int n = 402;
 
-	int *p = &n;
+             p = &n;
 
-	*p = 402;
+	    *p = 402;
 }
