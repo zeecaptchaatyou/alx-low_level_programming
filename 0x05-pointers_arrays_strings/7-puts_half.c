@@ -1,24 +1,12 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * puts_half - prints half of a string
  *
- * Return: Always 0.
- 
-  * puts_half - prints half of a string
+ * @str: string parameter input
  *
- * put-half @str: string parameter input
- *
- * puts-half Return: Nothing
+ *  Return: Nothing
  */
-int main(void)
-{
-    char *str;
-
-    str = "0123456789";
-    puts_half(str);
-    return (0);
-}
 
 void puts_half(char *str)
 {
