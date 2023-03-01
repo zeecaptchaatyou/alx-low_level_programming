@@ -1,8 +1,7 @@
 /*
  *Program to take a pointer to an int, and update the value it points to
  * Author : dev_zee
- * Main: where control is at the beginning of code execution, is defined in another file.
- * Function reseet_to_98 : updates the value of a variable pointed to by pointer n  
+ * reseet_to_98 : links to main function
  *
  */
 
