@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define UNUSED(argc) (void)(argc)
+//#define UNUSED(argc) (void)(argc)
 
 /* argc = argument count
  * argv = value at each count of argument
@@ -8,6 +8,7 @@
  */
   
 int main(int argc, char *argv[]) {
+	const UNUSED(argc) (void)(argc)
 	UNUSED(argc);
 
 	printf("%s\n", argv[0]);
