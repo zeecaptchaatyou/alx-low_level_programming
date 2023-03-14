@@ -1,16 +1,20 @@
 #include <stdio.h>
+#define UNUSED(argc) (void)(argc)
 
 /**
- *main: beginning of the program's compilation
- *argc: argument count
- *argv: value at each count of argument
+ *main: takes control of the program first
+ *@argc: argument count
+ *@argv: value at each count of argument
  *Return: 0
  */
   
-int main(int __attribute__((unused)) argc, char *argv[]) 
+int main(int argc, char *argv[])
 {
+
+
+	   UNUSED(argc);
 
 	   printf("%s\n", argv[0]);
 	   
-	   return 0;
+	   return (0);
 }
