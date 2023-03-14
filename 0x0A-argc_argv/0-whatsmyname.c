@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*#define UNUSED(argc) (void)(argc)*/
 
 /* main: beginning of the program's compilation
  * argc: argument count
