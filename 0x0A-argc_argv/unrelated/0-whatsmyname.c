@@ -8,7 +8,7 @@
  * Let's do this!
  */
   
-   int main(int __attribute__((unused)) argc, char *argv[]) {
+   int main(int argc, char *argv[]) {
 
 	   UNUSED(argc);
 
