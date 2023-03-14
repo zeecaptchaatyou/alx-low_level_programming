@@ -2,7 +2,7 @@
 
 /**
  *main: beginning of the program's compilation
-  argc: argument count
+ *argc: argument count
  *argv: value at each count of argument
  *Return: 0
  */
