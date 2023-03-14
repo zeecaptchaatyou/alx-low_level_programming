@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #define UNUSED(argc) (void)(argc)
 
-/* argc = argument count
+/* main = beginning of the program's compilation
+ * argc = argument count
  * argv = value at each count of argument
  * Let's do this!
  */
