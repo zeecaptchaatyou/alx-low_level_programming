@@ -1,4 +1,4 @@
-#ifndef MAIN_H
-#define ABS(X)
+#ifndef ABS
+#define ABS(x)
 
 #endif
