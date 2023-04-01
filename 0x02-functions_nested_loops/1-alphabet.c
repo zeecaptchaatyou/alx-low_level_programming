@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * print_alphabet - prints the alphabet in lower case
@@ -13,7 +14,7 @@ void print_alphabet(void)
 
     for (i = 97; i < 123; i++)
     {
-        putchar(i);
+    putchar(i);
     }
     putchar('\n');
 
