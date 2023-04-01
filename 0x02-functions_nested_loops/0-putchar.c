@@ -5,7 +5,8 @@
  * Return: 0, if program is sucessful.
 */
 
-int main(void) {
-    printf("_putchar\n");
-    return 0;
+int main(void)
+{
+printf("_putchar\n");
+return (0);
 }
