@@ -1,18 +1,11 @@
-#include "main.h"
+#include <stdio.h>
+
 /**
- * main - Entry for main function
- * Description: Program to print _putchar, followed by a line
- * Return: 0
- */
-int main(void)
-{
-char c[9] = "_putchar";
-int i = 0;
-while (i < 8)
-{
-_putchar(c[i]);
-i++;
-}
-_putchar('\n');
-return (0);
+ * main - prints "_putchar", follwowed by a new line
+ * Return: 0, if program is sucessful.
+*/
+
+int main(void) {
+    printf("_putchar");
+    return 0;
 }
