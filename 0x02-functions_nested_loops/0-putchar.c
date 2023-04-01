@@ -2,11 +2,13 @@
 
 /**
  * main - prints "_putchar", follwowed by a new line
+ * 
  * Return: 0, if program is sucessful.
 */
 
 int main(void)
 {
+
         putchar('_');
         putchar('p');
         putchar('u');
@@ -18,4 +20,5 @@ int main(void)
         putchar('\n')
 
 	    return (0);
+
 }
