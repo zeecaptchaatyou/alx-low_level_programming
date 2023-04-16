@@ -1,37 +1,35 @@
 #include "main.h"
+#include<stdio.h>
 /**
  * times_table - Entry function
  * Return: value
  */
 void times_table(void)
 {
-int num, i, j, row;
-num = 9;
-for (i = 0; i < num + 1; ++i)
-{
-for (j = 0; j < num + 1; ++j)
-{
-row = i * j;
-if (j == 0)
-{
-_putchar('0' + row);
+    int i = 0, j=0;
+    int pland;
+    while(i<9)
+    {
+        printf("0, \n");
+        while(j<9)
+        {
+            pland = i*j;
+            printf("%d,  \n", pland);
+            j++;
+        }
+        i++;
+    }
 }
-else if (row < 10)
+
+#include "main.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-_putchar(' ');
-_putchar('0' + row);
-}
-else
-{
-_putchar('0' + row / 10);
-_putchar('0' + row % 10);
-}
-if (j < 9)
-{
-_putchar(',');
-_putchar(' ');
-}
-}
-_putchar('\n');
-}
+    times_table();
+    return (0);
 }

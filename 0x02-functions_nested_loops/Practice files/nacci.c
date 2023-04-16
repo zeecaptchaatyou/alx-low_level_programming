@@ -9,20 +9,16 @@
  */
 int main(void)
 {
-    long j = 2;
-    int k = 1;
     int i;
-    int sum = 0;
-    printf("%d, ", k);
-    printf("%d, ", j);
-    for (i = 0; i < 98; i++)
+   long sum;
+   long pre_num = 0;
+   long post_num = 0;
+    for (i = 0; i< 98; i++)
     {
-        while sum  
-       s = j +  
-        printf("%ld, ", j);
-        n = sum + 
+        post_num = pow((1-1.618034), (i-1));
+        pre_num =  pow((1.618034), (i-1));
+        sum = (long)(pre_num - post_num ) / sqrt(5);
+        printf("%ld, ", (long)round(sum));
     }
-    putchar('\n');
-
     return (0);
 }
