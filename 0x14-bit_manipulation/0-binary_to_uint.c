@@ -30,16 +30,17 @@ unsigned int binary_to_uint(const char *b)
 {
 int i = 0, len = 0, total = 0, counter = 0;
 
+/*Are you a null string?*/
+if (b == NULL)
+{
+return (0);
+}
+
 /*Getting th length of string b*/
 while (b[i] != '\0')
 {
 len++;
 i++;
-}
-/*Are you a null string?*/
-if (len <= 0)
-{
-return (0);
 }
 
 /* Checking for impostors within the string. 0 will be returned if there is*/
