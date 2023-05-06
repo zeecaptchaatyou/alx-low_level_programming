@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * multiples - prints the multiple 2 
+ * multiples - prints the multiple 2
 */
 /**
  * print-binary - prints the binary representation of a number
@@ -11,5 +11,5 @@
 void print_binary(unsigned long int n)
 {
 int i = 0;
-
 }
+/*I'm not done with this....obviously. Will come aback to it*/
