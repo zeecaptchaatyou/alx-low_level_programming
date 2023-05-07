@@ -10,6 +10,6 @@
 */
 void print_binary(unsigned long int n)
 {
-int i = 0;
+
 }
 /*I'm not done with this....obviously. Will come aback to it*/
