@@ -25,18 +25,18 @@ void print_binary(unsigned long int n)
 unsigned long int i = multiples(n);
 if (n == 0)
 {
-putchar(48);
+_putchar(48);
 }
 for ( ; i >= 1; i >>= 1)
 {
 if (n >= i)
 {
-putchar(49);
+_putchar(49);
 n -= i;
 }
 else if (n < i)
 {
-putchar(48);
+_putchar(48);
 }
 }
 }
