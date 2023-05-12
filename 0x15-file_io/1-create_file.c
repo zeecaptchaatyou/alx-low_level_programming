@@ -2,7 +2,7 @@
 
 /**
  * create_file -creates a file
- * @filename: the name of the file to create
+ * @filename: file name, obviously
  * @text_content: NULL terminated string to write to the file
  * Return: 1 on success, -1 on failure
  */
@@ -28,24 +28,4 @@ return (-1);
 
 close(f);
 return (1);
-}
-
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(int ac, char **av)
-{
-    int res;
-
-    if (ac != 3)
-    {
-        dprintf(2, "Usage: %s filename text\n", av[0]);
-        exit(1);
-    }
-    res = create_file(av[1], av[2]);
-    printf("-> %i)\n", res);
-    return (0);
 }
