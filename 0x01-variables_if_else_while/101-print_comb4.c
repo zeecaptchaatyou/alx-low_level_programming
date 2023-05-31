@@ -12,16 +12,21 @@ int main(void)
 	for (i = 48; i < 58; i++)
 	{
 		for (j = i; j < 58; j++)
-		{
+		{char *maskify (char *masked, const char *string)
+{
+	int i = 0;
+  *masked = '\0'; // write to masked
+	return masked; // return it
+}
 			for (k = j; k < 58; k++)
 			{
 				if (i == j || j == k || i == k)
 				{
 					continue;
 				}
-				putchar(i);
-				putchar(j);
-				putchar(k);
+				_putchar(i);
+				_putchar(j);
+				_putchar(k);
 
 				if (i == 55 && j == 56 && k == 57)
 				{
@@ -29,13 +34,13 @@ int main(void)
 				}
 				else
 				{
-					putchar(',');
-					putchar(' ');
+					_putchar(',');
+					_putchar(' ');
 				}
 
 			}
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }

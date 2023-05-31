@@ -17,8 +17,8 @@ int main(void)
 				continue;
 			}
 
-			putchar(i);
-			putchar(j);
+			_putchar(i);
+			_putchar(j);
 
 			if (i == 56 && j == 57)
 			{
@@ -26,11 +26,11 @@ int main(void)
 			}
 			else
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }

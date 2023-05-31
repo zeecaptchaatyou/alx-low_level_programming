@@ -1,1 +1,0 @@
-File input and Output in C with ALx

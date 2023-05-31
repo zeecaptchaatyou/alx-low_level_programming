@@ -22,7 +22,7 @@ int main(void)
         printf("%ld, ", j);
         n = sum + 
     }
-    putchar('\n');
+    _putchar('\n');
 
     return (0);
 }
