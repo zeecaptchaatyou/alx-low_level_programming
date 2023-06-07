@@ -1,28 +1,31 @@
 #include "main.h"
 
+int sqrt_calc(int n, int z);
+
 /**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: number to toy with
- * Return: literally what I said above: unsigned square root of n
+* _sqrt_recursion - uses the checks for tthe signedness of the return value
+* of the _sqrt function
+* @n: number to be toyed with
+* Return: the square root of n
 */
 int _sqrt_recursion(int n)
 {
-float i = 1, j = n, k = 0;
-if (n > 1)
-{
-for ( ; i < j; i++)
-{
-k = n / i;
-if (k == i)
-break;
+	if (n == 0 || n == 1)
+		return (n);
+	return (sqrt_calc(0, n));
 }
-if (k != i)
-return (-1);
-else
-return (k);
-}
-else if (n < 1)
-return (n);
-else
-return (1);
+
+/**
+ * sqrt_calc - returns the square root of a number
+ * @n: test number
+ * @z: squared number
+ * Return: natural or unnatural square root of n
+ */
+int sqrt_calc(int n, int z)
+{
+	if (n > z / 2)
+		return (-1);
+	else if (n * n == z)
+		return (n);
+	return (sqrt_calc(n + 1, z));
 }
