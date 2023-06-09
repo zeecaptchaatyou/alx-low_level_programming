@@ -17,19 +17,19 @@ return (count);
 }
 
 /**
- * check_palindrome - Checks  if a string s is a palindrome.
+ * _palindrome_checker - Checks  if a string s is a palindrome.
  * @s: The string to be checked.
  * @count: length of s
  * @index: The index of the string to be checked.
  * Return: If the string is a palindrome - 1.
  *         If the string is not a palindrome - 0.
  */
-int check_palindrome(char *s, int count, int index)
+int _palindrome_checker(char *s, int count, int index)
 {
 if (s[index] == s[count / 2])
 return (1);
 if (s[index] == s[count - index - 1])
-return (check_palindrome(s, count, index + 1));
+return (_palindrome_checker(s, count, index + 1));
 return (0);
 }
 
@@ -44,5 +44,5 @@ int index = 0;
 int count = _strlen_recursion(s);
 if (!(*s))
 return (1);
-return (check_palindrome(s, count, index));
+return (_palindrome_checker(s, count, index));
 }
