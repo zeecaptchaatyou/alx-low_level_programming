@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - prints number of arguments passed to it
@@ -9,7 +10,7 @@
 int main(int argc, char **argv __attribute__((unused)))
 {
 char i = argc;
-putchar((i + 48) - 1);
-putchar('\n');
+_putchar((i + 48) - 1);
+_putchar('\n');
 return(0);
 }
