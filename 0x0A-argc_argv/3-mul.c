@@ -9,7 +9,7 @@
 int main(int argc, char **argv)
 {
 int num, mul = 1, i = 1;
-if (argc <= 1)
+if (argc <= 2)
 {
 printf("Error\n");
 return (1);
@@ -20,5 +20,5 @@ num = atoi(argv[i]);
 mul *= num;
 }
 printf("%d\n", mul);
-return(0);
+return (0);
 }
