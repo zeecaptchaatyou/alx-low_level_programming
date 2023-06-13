@@ -15,7 +15,7 @@ int i = 0, size_in_bytes = size * sizeof(int);
 char *arr = (char *)malloc(size_in_bytes);
 for ( ; i < size_in_bytes; i++)
 *(arr + i) = c;
-if (size == 0)
+if (size == 0 || arr == NULL)
 return ('\0');
 else
 return (arr);
