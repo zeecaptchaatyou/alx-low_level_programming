@@ -10,7 +10,21 @@
 */
 int main(int argc, char **argv)
 {
-int i = 1, sum = 0, z = 0;
+int sum = 0, z = 0, a = 0, i = 1;
+for ( ; i < argc; i++)
+{
+a = 0;
+while (argv[i][a] != '\0')
+{
+if (!(argv[i][a] > 47 && argv[i][a] < 58))
+{
+printf("Error\n");
+return (1);
+}
+a++;
+}
+}
+i = 1;
 for ( ; i < argc; i++)
 {
 z = atoi(argv[i]);
@@ -22,6 +36,7 @@ sum = 0;
 printf("Error\n");
 return (1);
 }
+printf("z= %d\n", z);
 }
 printf("%d\n", sum);
 return (0);
