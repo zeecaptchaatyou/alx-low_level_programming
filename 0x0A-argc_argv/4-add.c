@@ -36,7 +36,6 @@ sum = 0;
 printf("Error\n");
 return (1);
 }
-printf("z= %d\n", z);
 }
 printf("%d\n", sum);
 return (0);
