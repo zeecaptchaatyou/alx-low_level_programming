@@ -16,7 +16,7 @@ char *arr = (char *)malloc(size * sizeof(int));
 for ( ; i < size_in_bytes; i++)
 *(arr + i) = c;
 if (size == 0 || arr == NULL)
-return ('\0');
+return (NULL);
 else
 return (arr);
 }
