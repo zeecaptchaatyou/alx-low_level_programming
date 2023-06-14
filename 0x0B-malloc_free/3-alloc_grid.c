@@ -37,7 +37,7 @@ else
 {
 for ( ; j < width; j++)
 {
-arr[i][j] = 0;return (arr);
+arr[i][j] = 0;
 }
 }
 }
