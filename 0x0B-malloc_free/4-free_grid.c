@@ -1,47 +1,21 @@
 #include <stdio.h>
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
+
+int **alloc_grid(int width, int height);
 
 /**
- * alloc_grid - returns pointer to 2D arrday of integers
- * @width: length of each subarray
- * @height: number of subarrays
- * Return: pointer to 2D array
+ * free_grid -  frees memory allocates by a function alloc_grid
+ * @grid: pointer to a 2d array of integers, grid in context
+ * @height: really dunno why this is here but, I'll keep coding
+ * Return: Nada
 */
-int **alloc_grid(int width, int height)
+void free_grid(int **grid, int height)
 {
-int i = 0, j = 0;
-int **arr = (int **)malloc(height * sizeof(int *));
-if (height <= 0 || width <= 0)
-{
-free(arr);
-return (NULL);
-}
-
-if (arr == NULL)
-{
-free(arr);
-return (NULL);
-}
-else
-{
+int i = 0;
 for ( ; i < height; i++)
 {
-arr[i] = (int *)malloc((width * sizeof(int)));
-if (arr[i] == NULL)
-{
-free(arr[i]);
-arr = NULL;
-}
-else
-{
-for ( ; j < width; j++)
-{
-arr[i][j] = 0;return (arr);
-}
-}
-}
-return (arr);
+free(grid[i]);
 }
 }
 
@@ -70,7 +44,7 @@ void print_grid(int **grid, int width, int height)
         }
         printf("\n");
         h++;
-    }   
+    }
 }
 
 /**
@@ -92,6 +66,6 @@ int main(void)
     grid[0][3] = 98;
     grid[3][4] = 402;
     print_grid(grid, 6, 4);
-    free(grid);
+    free_grid(grid, 4);
     return (0);
 }
