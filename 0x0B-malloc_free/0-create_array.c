@@ -11,8 +11,8 @@
 */
 char *create_array(unsigned int size, char c)
 {
-int i = 0, size_in_bytes = size * sizeof(int);
-char *arr = (char *)malloc(size * sizeof(int));
+int i = 0, size_in_bytes = size * sizeof(c);
+char *arr = (char *)malloc(size * sizeof(c));
 if (size == 0 || arr == NULL)
 return (NULL);
 for ( ; i < size_in_bytes; i++)
