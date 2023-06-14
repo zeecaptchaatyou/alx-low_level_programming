@@ -10,7 +10,7 @@
 int _strlen(char *s)
 {
 int length = 0;
-while(s[length] != '\0')
+while (s[length] != '\0')
 length++;
 return (length);
 }
@@ -33,7 +33,7 @@ if (s2 == NULL)
 s2 = "";
 
 s_len = _strlen(s1) + _strlen(s2);
-new_s = (char *)malloc((s_len * sizeof(char)) + 1);
+new_s = (char *)malloc((s_len *sizeof(char)) + 1);
 
 /*Handling malloc's return*/
 if (new_s == NULL)
@@ -46,7 +46,7 @@ new_s[i] = s1[i];
 i++;
 }
 i = _strlen(s1);
-for (c = 0; s2[c]!= '\0'; c++,i++)
+for (c = 0; s2[c] != '\0'; c++, i++)
 new_s[i] = s2[c];
 return (new_s);
 }
