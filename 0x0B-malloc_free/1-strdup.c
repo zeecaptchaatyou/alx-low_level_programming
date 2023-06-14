@@ -11,6 +11,8 @@ char *_strdup(char *str)
 {
 int i, j = 0;
 char *new_str;
+if (str == NULL)
+return (NULL);
 while (str[i] != '\0')
 i++;
 new_str = (char*)malloc(i * sizeof(char));
@@ -31,7 +33,7 @@ int main(void)
 {
     char *s;
 
-    s = _strdup("HFirst, solve the problem. Then, write the code.");
+    s = _strdup(NULL);
     if (s == NULL)
     {
         printf("failed to allocate memory\n");
