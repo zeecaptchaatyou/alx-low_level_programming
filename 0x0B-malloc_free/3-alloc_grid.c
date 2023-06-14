@@ -34,5 +34,8 @@ arr[i][j] = 0;
 return (arr);
 }
 else
+{
+free(arr);
 return (NULL);
+}
 }
