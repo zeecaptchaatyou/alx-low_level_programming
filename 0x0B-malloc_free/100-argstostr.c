@@ -24,7 +24,7 @@ j = 0;
 while (av[i][j] != '\0')
 len++, j++;
 }
-new_str = (char *)malloc((len *sizeof(char)) + ac);
+new_str = (char *)malloc((len *sizeof(char)) + ac + 1);
 
 /*Handling malloc's return*/
 if (new_str == NULL)
