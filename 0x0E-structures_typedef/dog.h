@@ -5,7 +5,7 @@
 
 
 /**
- * dog - creates a dog
+ * struct dog - creates a dog
  * @name: first member and name of dog
  * @age: second member and age of dog
  * @owner: third member and owner of dog
