@@ -3,13 +3,13 @@
 
 /**
  * print_dog - prints a struct dog
- * @d: struct dog alias
+ * @d: struct dog alias and new instance of struct dog
  * Return: Nada
 */
 void print_dog(struct dog *d)
 {
 if (d == NULL)
-return;
+exit;
 if (d->name == NULL)
 printf("Name: (nil)");
 else
