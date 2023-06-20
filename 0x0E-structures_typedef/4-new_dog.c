@@ -56,7 +56,7 @@ return (NULL);
 }
 else
 name1 = _strcpy(name1, name);
-newdoggy->name = name;
+newdoggy->name = name1;
 if (newdoggy->name == NULL)
 {
 free(newdoggy->name);
@@ -72,7 +72,7 @@ return (NULL);
 }
 else
 owner1 = _strcpy(owner1, owner);
-newdoggy->owner = owner;
+newdoggy->owner = owner1;
 if (newdoggy->owner == NULL)
 {
 free(newdoggy->owner);
