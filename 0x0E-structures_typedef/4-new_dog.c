@@ -54,14 +54,13 @@ if (name1 == NULL)
 free(name1);
 return (NULL);
 }
-else
-name1 = _strcpy(name1, name);
-newdoggy->name = name1;
+newdoggy->name = (char *)malloc(len *sizeof(char));
 if (newdoggy->name == NULL)
 {
 free(newdoggy->name);
 return (NULL);
 }
+newdoggy->name = _strcpy(name1, name);
 newdoggy->age = age;
 len = _strlen(owner);
 owner1 = (char *)malloc(len *sizeof(char));
@@ -70,13 +69,12 @@ if (owner1 == NULL)
 free(owner1);
 return (NULL);
 }
-else
-owner1 = _strcpy(owner1, owner);
-newdoggy->owner = owner1;
+newdoggy->owner = (char *)malloc(len *sizeof(char));
 if (newdoggy->owner == NULL)
 {
 free(newdoggy->owner);
 return (NULL);
 }
+newdoggy->owner = _strcpy(owner1, owner);
 return (newdoggy);
 }
