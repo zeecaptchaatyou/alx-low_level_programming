@@ -16,6 +16,8 @@ if (array == NULL)
 free(array);
 return;
 }
+if (size <= 0)
+return;
 if (array != NULL)
 {
 for ( ; i < size; i++)
