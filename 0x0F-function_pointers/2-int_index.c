@@ -13,7 +13,7 @@ int i = 0, ret = -1;
 if (size <= 0)
 return (-1);
 if (array == NULL || cmp == NULL)
-return;
+return (0);
 for ( ; i < size; i++)
 {
 if (cmp(array[i]) !=  0)
