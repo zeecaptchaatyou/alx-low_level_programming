@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 {
 int op1, op2, ret;
 char *op = argv[2];
-int (*op_ptr)(int,int);
+int (*op_ptr)(int, int);
 /*char s[6] = "+-*/
 /*Conditions*/
 if (argc != 4)
@@ -21,7 +21,8 @@ if (argc != 4)
 printf("Error\n");
 exit(98);
 }
-if (!(strcmp(op, "+") == 0 || strcmp(op, "-") == 0 || strcmp(op, "*") == 0 || strcmp(op, "/") == 0 || strcmp(op, "%") == 0))
+if (!(strcmp(op, "+") == 0 || strcmp(op, "-") == 0 || strcmp(op, "*") == 0
+|| strcmp(op, "/") == 0 || strcmp(op, "%") == 0))
 {
 printf("Error\n");
 exit(99);
