@@ -17,8 +17,8 @@ if (n > 0)
 {
 for ( ; i < n; i++)
 {
-if (separator[i + 1] != '\0')
-printf("%d%c ", va_arg(ments, int), separator[i]);
+if (separator != NULL)
+printf("%d%s ", va_arg(ments, int), separator);
 else
 {
 if (n - i != 1)
