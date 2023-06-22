@@ -21,6 +21,8 @@ va_end(ments);
 return (sum);
 }
 else
+{
 va_end(ments);
 return (0);
+}
 }
