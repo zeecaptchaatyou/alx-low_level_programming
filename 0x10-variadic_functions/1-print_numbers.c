@@ -17,17 +17,11 @@ if (n > 0)
 {
 for ( ; i < n; i++)
 {
-if (separator != NULL)
-printf("%d%s ", va_arg(ments, int), separator);
-else
-{
-if (n - i != 1)
-printf("%d, ", va_arg(ments, int));
-else
-printf("%d  ", va_arg(ments, int));
+printf("%d", va_arg(ments, int));
+if (separator != NULL && i != (n - 1))
+printf("%s ", separator);
 }
 }
-}
-_putchar('\n');
+printf("\n");
 va_end(ments);
 }
