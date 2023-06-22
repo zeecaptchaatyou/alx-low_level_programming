@@ -14,7 +14,6 @@ int main(int argc, char **argv)
 int op1, op2, ret;
 char *op = argv[2];
 int (*op_ptr)(int, int);
-/*char s[6] = "+-*/
 /*Conditions*/
 if (argc != 4)
 {

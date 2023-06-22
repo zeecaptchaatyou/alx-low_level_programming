@@ -1,7 +1,7 @@
-#include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include "3-calc.h"
 
 /**
  * get_op_func - function that determines which function its argument
@@ -24,6 +24,7 @@ while (ops[i].op != NULL)
 {
 if (strcmp(s, ops[i].op) == 0)
 return (ops[i].f);
+i++;
 }
 return (NULL);
 }
