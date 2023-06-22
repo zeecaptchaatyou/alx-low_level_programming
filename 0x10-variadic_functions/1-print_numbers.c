@@ -28,6 +28,6 @@ printf("%d  ", va_arg(ments, int));
 }
 }
 }
-putchar('\n');
+_putchar('\n');
 va_end(ments);
 }
