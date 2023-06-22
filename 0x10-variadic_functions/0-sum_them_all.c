@@ -17,12 +17,7 @@ if (n > 0)
 {
 for ( ; i < n; i++)
 sum += va_arg(ments, int);
+}
 va_end(ments);
 return (sum);
-}
-else
-{
-va_end(ments);
-return (0);
-}
 }
