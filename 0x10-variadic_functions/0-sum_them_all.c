@@ -12,7 +12,7 @@ int sum_them_all(const unsigned int n, ...)
 va_list ments;
 size_t i = 0;
 int sum = 0;
-if (n != 0)
+if (n > 0)
 {
 va_start(ments, n);
 for ( ; i < n; i++)
@@ -20,5 +20,6 @@ sum += va_arg(ments, int);
 va_end(ments);
 return (sum);
 }
+else
 return (0);
 }
