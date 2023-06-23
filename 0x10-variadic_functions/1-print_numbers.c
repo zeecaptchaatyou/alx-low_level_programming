@@ -1,6 +1,6 @@
-#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+#include "variadic_functions.h"
 
 /**
  * print_numbers - a function that prints numbers
@@ -20,6 +20,6 @@ printf("%d", va_arg(ments, int));
 if (separator != NULL && i != (n - 1))
 printf("%s ", separator);
 }
-va_end(ments);
 printf("\n");
+va_end(ments);
 }
