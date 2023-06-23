@@ -16,7 +16,7 @@ int b;
 float c;
 va_start(ments, format);
 
-while (format[i])
+while (format[i] && format)
 {
 switch (format[i])
 {
