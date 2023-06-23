@@ -47,5 +47,6 @@ format[i] == 'c' || format[i] == 'i') && format[i + 1] != '\0')
 printf(", ");
 i++;
 }
+printf("\n");
 va_end(ments);
 }
