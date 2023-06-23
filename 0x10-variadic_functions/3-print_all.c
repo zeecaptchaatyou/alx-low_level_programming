@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include <string.h>
 #include "variadic_functions.h"
 
 /**
@@ -12,6 +13,7 @@ size_t i = 0;
 char *d;
 va_list ments;
 va_start(ments, format);
+
 
 while (format[i] && format)
 {
@@ -39,4 +41,15 @@ i++;
 }
 printf("\n");
 va_end(ments);
+}
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    print_all(NULL);
+    return (0);
 }
