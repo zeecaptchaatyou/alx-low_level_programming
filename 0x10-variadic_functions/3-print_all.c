@@ -1,5 +1,4 @@
 #include <stdarg.h>
-#include <stdlib.h>
 #include "variadic_functions.h"
 
 /**
@@ -34,10 +33,7 @@ break;
 case 's':
 d = va_arg(ments, char *);
 if (d == NULL)
-{
-printf("(nil)");
-break;
-}
+d = "(nil)";
 printf("%s", d);
 }
 if ((format[i] == 's' || format[i] == 'f' ||
