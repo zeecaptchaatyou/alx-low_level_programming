@@ -1,6 +1,6 @@
-#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdlib.h>
+#include "variadic_functions.h"
 
 /**
  * print_all -  variadic function that prints anything
@@ -15,7 +15,6 @@ char a, *d;
 int b;
 float c;
 va_start(ments, format);
-
 while (format[i] && format)
 {
 switch (format[i])
@@ -49,4 +48,5 @@ printf(", ");
 i++;
 }
 printf("\n");
+va_end(ments);
 }
