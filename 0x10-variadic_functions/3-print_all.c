@@ -32,11 +32,9 @@ c = va_arg(ments, double);
 printf("%f", c);
 break;
 case 's':
-d = (char *)malloc(sizeof(va_arg(ments, char *)));
 d = va_arg(ments, char *);
 if (d == NULL)
 {
-free(d);
 printf("(nil)");
 break;
 }
