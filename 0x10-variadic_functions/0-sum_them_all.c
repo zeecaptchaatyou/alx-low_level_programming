@@ -10,7 +10,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 va_list ments;
-unsigned int i = 0;
+size_t i = 0;
 int sum = 0;
 va_start(ments, n);
 if (n != 0)
