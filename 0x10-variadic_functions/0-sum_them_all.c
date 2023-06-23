@@ -8,9 +8,9 @@
 */
 int sum_them_all(const unsigned int n, ...)
 {
-va_list ments;
 size_t i = 0;
 int sum = 0;
+va_list ments;
 
 if (n == 0)
 return (0);
