@@ -48,5 +48,5 @@ format[i] == 'c' || format[i] == 'i') && format[i + 1] != '\0')
 printf(", ");
 i++;
 }
-_putchar('\n');
+printf("\n");
 }
