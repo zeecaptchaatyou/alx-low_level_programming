@@ -7,21 +7,19 @@
 */
 void free_listint2(listint_t **head)
 {
-listint_t *ptr = *head;
+listint_t *ptr;
 
-if (*head != NULL)
-{
-while (ptr)
-{
-ptr = (*head)->next;
-free(*head);
-*head = ptr;
-}
-head = NULL;
-}
+if (head == NULL || *head == NULL)
+return;
+
 else
 {
-printf("Freed !");
-return;
+while (*head)
+{
+ptr = (*head)->next;
+free((*head));
+*head = ptr;
+}
+*head = NULL;
 }
 }
