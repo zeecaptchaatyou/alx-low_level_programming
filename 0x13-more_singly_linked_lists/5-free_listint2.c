@@ -19,4 +19,9 @@ free(*head);
 }
 head = NULL;
 }
+else
+{
+printf("Freed !");
+return;
+}
 }
