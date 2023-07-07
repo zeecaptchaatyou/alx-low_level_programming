@@ -2,10 +2,10 @@
 
 
 /**
-* _strcat -> this is a funcion strcat
-* @dest: first param
-* @src: second param
-* Return: a string
+* _strcat - concatenates two strings
+* @dest: destination string
+* @src: source string
+* Return: newly concatenated string
 */
 char *_strcat(char *dest, char *src)
 {
