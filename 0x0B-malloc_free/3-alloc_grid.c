@@ -32,7 +32,7 @@ arr[i] = (int *)malloc((width * sizeof(int)));
 if (arr[i] == NULL)
 {
 free(arr[i]);
-arr = NULL;
+return (NULL);
 }
 else
 {
