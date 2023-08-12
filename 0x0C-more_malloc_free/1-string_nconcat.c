@@ -62,7 +62,7 @@ n = _strlen(s2);
 if (s2 == NULL)
 n = 0;
 
-new_block = (char *)malloc(n + _strlen(s1));
+new_block = (char *)malloc(n + _strlen(s1) + 1);
 if (new_block == NULL)
 {
 free(new_block);
