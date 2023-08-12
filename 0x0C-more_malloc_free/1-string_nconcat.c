@@ -63,6 +63,11 @@ if (s2 == NULL)
 n = 0;
 
 new_block = (char *)malloc(n + _strlen(s1));
+if (new_block == NULL)
+{
+free(new_block);
+return (NULL);
+}
 
 _strcpy(new_block, s1);
 _strncat(new_block, s2, n);
