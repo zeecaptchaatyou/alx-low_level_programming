@@ -46,11 +46,9 @@ if (age < 0 || name == NULL || owner == NULL)
 return (NULL);
 
 newdoggy = (dog_t *)malloc(sizeof(dog_t));
-
 if (newdoggy == NULL)
 return (NULL);
-else
-{
+
 /*first member*/
 len = _strlen(name);
 newdoggy->name = (char *)malloc((len *sizeof(char)));
@@ -59,21 +57,33 @@ if (newdoggy->name == NULL)
 free(newdoggy);
 return (NULL);
 }
-else
-newdoggy->name = _strcpy(newdoggy->name, name);
-/*second member*/
-newdoggy->age = age;
+
 /*third member*/
 len = _strlen(owner);
-newdoggy->owner = (char *)malloc((len *sizeof(char) + 1));
+newdoggy->owner = (char *)malloc((len *sizeof(char)));
 if (newdoggy->owner == NULL)
 {
 free(newdoggy->name);
 free(newdoggy);
 return (NULL);
 }
-else
+
 newdoggy->owner = _strcpy(newdoggy->owner, owner);
+newdoggy->name = _strcpy(newdoggy->name, name);
+newdoggy->age = age;
 return (newdoggy);
 }
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    dog_t *my_dog;
+
+    my_dog = new_dog("Poppy", 3.5, "Bob");
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
+    return (0);
 }
