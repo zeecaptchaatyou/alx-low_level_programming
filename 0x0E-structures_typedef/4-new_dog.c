@@ -74,22 +74,3 @@ newdoggy->owner = _strcpy(newdoggy->owner, owner);
 return (newdoggy);
 }
 }
-
-/*Came back here four days later and will leave some hints to get past the checker
-when next you're here to figure why this wasn't accepted out. Check the return
-value(NULL) of the instance that malloc returns null for a char* member of struct
-dog....the program terminates at that point and that's probably whats causing the
-error*/
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-dog_t *my_dog;
-
-my_dog = new_dog("Poppy", 3.5, "Bob");
-printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
-return (0);
-}
