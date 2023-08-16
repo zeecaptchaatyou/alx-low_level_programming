@@ -1,0 +1,8 @@
+ 1.    Sorting an array of integers: Write a program that sorts an array of integers in ascending order using function pointers. Create a function that takes the array, its length, and a comparison function as parameters, and sorts the array based on the comparison function. The comparison function should take two integers as parameters and return a negative value if the first integer is smaller, a positive value if the first integer is larger, and zero if they are equal.
+
+ 2.    Math operations: Implement a program that performs basic math operations (addition, subtraction, multiplication, and division) based on user input. Use function pointers to switch between different operations. Prompt the user to enter two numbers and the desired operation, and then use the appropriate function pointer to perform the operation and display the result.
+
+ 3.    Callback functions: Create a program that allows the user to register multiple callback functions. Each callback function should take an integer as input and perform some operation on it. Provide a menu system that allows the user to select a callback function and enter an integer. The program should then call the selected callback function with the entered integer as the argument and display the result.
+
+ 4.    Event handling: Implement a simple event handling system using function pointers. Define a set of events (e.g., button press, mouse movement) and associate each event with a corresponding function pointer. When an event occurs, call the appropriate function using the corresponding function pointer.
+ 
