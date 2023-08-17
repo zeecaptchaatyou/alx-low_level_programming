@@ -40,14 +40,3 @@ i++;
 printf("\n");
 va_end(ments);
 }
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-print_all("qwertyuopadghjklzxvbnm");
-    return (0);
-}
