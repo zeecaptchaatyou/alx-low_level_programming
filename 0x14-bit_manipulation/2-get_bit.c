@@ -15,7 +15,6 @@ return (0);
 
 /*shift 1 to position index and do a bitwise and with n*/
 a = ((n & (1 << index)));
-printf("a = %d\n", a);
 
 /*
  * a returns some non-zero or zero number and bam!
