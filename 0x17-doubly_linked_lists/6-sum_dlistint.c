@@ -14,7 +14,7 @@ if (head == NULL)
 return (0);
 
 while (temp != NULL)
-n++, temp = temp->next;
+n += temp->n, temp = temp->next;
 
 return (n);
 }
