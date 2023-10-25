@@ -2,14 +2,13 @@
 
 /**
  * main - generate a key depending on a username for crackme5
- * @argc: number of arguments passed
+ * @argc: argument
  * @argv: arguments passed to main
- *
  * Return: 0 on success, 1 on error
  */
 int main(int argc, char *argv[])
 {
-    ssize_t i, j;
+    size_t i, j;
 	size_t len, add;
 	char *str = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 	char delim[7] = "      ";
